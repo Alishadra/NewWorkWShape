@@ -12,14 +12,11 @@ public class AppRunner {
 		
 		square.setSide(25);
 		
-		String a = String.valueOf(square.getArea());
-		
 		Logger log = Logger.getLogger(Square.class.getName());
 		
-		public void someMethod() {
 			
-			log.info("Area + a");
-		}
-	}
+			log.info("" + square.getArea());
 
+	
+	}
 }
