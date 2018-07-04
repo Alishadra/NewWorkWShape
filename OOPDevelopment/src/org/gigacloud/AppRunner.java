@@ -2,7 +2,9 @@ package org.gigacloud;
 
 import java.util.logging.Logger;
 
+import org.gigacloud.circle.Circle;
 import org.gigacloud.square.Square;
+import org.gigacloud.triangle.Triangle;
 
 public class AppRunner {
 
@@ -12,10 +14,25 @@ public class AppRunner {
 		
 		square.setSide(25);
 		
-		Logger log = Logger.getLogger(Square.class.getName());
+		Triangle triangle = new Triangle ();
+		
+		triangle.setHeight(12);
+		
+		triangle.setBase(10);
+		
+		Circle circle = new Circle();
+		
+		circle.setRadius(15);
+		
+		Logger log = Logger.getLogger(AppRunner.class.getName());
 		
 			
-			log.info("" + square.getArea());
+			log.info("" + square.getArea() + triangle.getArea() + circle.getArea());
+			
+			
+			
+			
+			
 
 	
 	}
