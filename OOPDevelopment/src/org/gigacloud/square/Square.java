@@ -16,17 +16,6 @@ public class Square extends AbstractShape {
 		return area;
 	}
 	
-	String a = String.valueOf(getArea());
-	
-	private static Logger log = Logger.getLogger(Square.class.getName());
-	
-	public void someMethod() {
-		
-		log.info("a");
-	}
-	
-	
-	
 
 	public int getSide() {
 		return side;
